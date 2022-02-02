@@ -1,0 +1,242 @@
+html, body {
+    font-family: "apercu", sans-serif;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+*, *:after, *:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 10px 0px 10px;
+    ;
+}
+
+/* navigation */
+
+.header_area {
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    z-index: 3;
+}
+
+.header_area nav, .header_area ul {
+    display: block;
+    text-align: center;
+}
+
+.header_area nav {
+    float: right;
+    overflow: hidden;
+    text-align: center;
+    right: 5%;
+    position: relative;
+}
+
+.header_area nav a {
+    text-decoration: none;
+    float: left;
+    padding-right: 20px;
+    line-height: 80px;
+    color: #000;
+}
+
+.header_area nav a:hover {
+    color: #5cb85c;
+    background: none;
+}
+
+.header_area .hdl {
+    font-size: 25px;
+    color: #000;
+    margin-left: 5%;
+    padding-left: 15px;
+    text-decoration: none;
+    line-height: 80px;
+}
+
+/* body */
+
+.home_section {
+    position: absolute;
+    left: 12%;
+    top: 25%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.home_section2 {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* social icons */
+
+.social {
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.social a {
+    color: #909096;
+    padding: 10px;
+}
+
+.social a:hover {
+    color: #4CAF50;
+}
+
+.backend {
+    color: #909096;
+}
+
+li {
+    list-style-type: none;
+}
+
+.typewriter {
+    font-size: 25px;
+}
+
+.home_section .typewriter h3 {
+    position: relative;
+}
+
+@media only screen and (max-width: 960px) {
+    .home_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 20%;
+    }
+    .home_section, .home_section2, .social {
+        position: absolute;
+        max-width: 100%;
+    }
+    .home_section2 {
+        bottom: 10%;
+        top: unset;
+    }
+    .typewriter {
+        font-size: 20px;
+    }
+    .header_area nav a {
+        display: none;
+    }
+    .opennav {
+        display: block!important;
+        font-size: 30px;
+        cursor: pointer;
+        line-height: 80px;
+        float: right;
+        right: 5%;
+        position: relative;
+    }
+}
+
+.mybtn {
+    color: #000000;
+    background-color: #4CAF50;
+    padding: 12px;
+}
+
+.txt-rotate, .myname {
+    color: #5cb85c;
+}
+
+/* mobile nav */
+
+.mobilenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.mobilenav-content a {
+    position: relative;
+    left: 0;
+}
+
+.mobilenav-content {
+    position: relative;
+    padding-left: 10%;
+    top: 35%;
+    width: 100%;
+}
+
+.mobilenav a {
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.mobilenav a:hover, .mobilenav a:focus {
+    color: #4CAF50;
+}
+
+.mobilenav .closebtn, .mobilenav .hdl {
+    font-weight: 500;
+    display: block!important;
+    font-size: 60px;
+    cursor: pointer;
+    position: absolute;
+    line-height: 80px;
+    float: right;
+    right: 5%;
+    top: 0;
+}
+
+.mobilenav .hdl {
+    font-size: 30px;
+    left: 5%;
+}
+
+@media screen and (max-height: 450px) {
+    .mobilenav a {
+        font-size: 20px
+    }
+}
+
+.opennav {
+    display: none;
+}
+
+.anim, .anim svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.anim path {
+    stroke-width: 2;
+}
+.rere {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
